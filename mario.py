@@ -1,0 +1,17 @@
+# TODO
+
+
+
+while True:
+    h = input("enter the height: ")
+    try:
+        val = int(h)
+        while val < 1 or val > 8:
+            val = int(input("enter the height again:  "))
+        for i in range(val):
+            print(' '*(val-i-1) + '#'*(i+1))
+        break
+    except ValueError:
+        h = input("enter the height: ")
+
+
